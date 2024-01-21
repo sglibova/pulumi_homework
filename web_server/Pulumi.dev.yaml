@@ -1,7 +1,7 @@
 config:
   aws:region: us-east-2
   web_server:config_color: "blue"
-  web_server:ecr_user: "sglibova.iam"
+  web_server:ecrUser: "sglibova.iam"
   web_server:desiredClusterSize: "1"
   web_server:eksNodeInstanceType: t3.micro
   web_server:maxClusterSize: "2"

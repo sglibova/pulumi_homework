@@ -19,6 +19,7 @@ config = pulumi.Config()
 
 # Image Config
 config_color = config.get("config_color", "red")
+
 # ECR Config
 ecr_user=config.get("ecrUser")
 ecr_repo_name = "web_server_repo"
