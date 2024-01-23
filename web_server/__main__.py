@@ -74,6 +74,7 @@ class EKSCluster(ComponentResource):
         pulumi.export("kubeconfig", eks_cluster.kubeconfig)
 
 # Kubernetes Deployment and Service Class
+# This depends on cluster creation - unsure of how to set this order up.
 class K8sDeployment(ComponentResource):
     def __init__(self, app_name, app_image, service_name, opts = None):
         super().__init__('sglibova:aws:K8sDeployment', app_name, None, opts)
